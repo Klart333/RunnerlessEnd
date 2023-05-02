@@ -7,7 +7,7 @@ An endless runner made in unreal engine.
 Let me start off with apoligizing for missing the first part submission, there was a 9-day long game jam I was giving my complete attention to, as it was fun and encouraged by the school. 
 After that I have made the game, and missed the part of documenting bugs as I go along. ops. 
 
-I guess I can just try to talk a bit about development here and hope for the best :)
+I guess I can just try to talk a bit about development here and hope for the best :) \n
 Working in unreal as a beginner has been quite painful as everything is incredibly rigid, among other reasons.
 The most recent example of this is that I was spawning obstacles with the ObstacleSpawner I made, makes sense. Aight but I want the obstacles to give a callback when they cross 0 as that's when the player dodges them etc. Could do it with an event but it seems a bit exaggerated to use a event for just that and also making an event takes like 8 words and I have to google it. So I just keep a reference to the ObstacleSpawner and call the function, right? Nope! That's a circular dependancy. Did I think of this? No. Did rider tell me anywhere, also no. Instead the TArray I made didn't have the Add function. Why of course, the common NoAddFunctionCausedByCircularDependancy exception, so that was very frustrating to debug. 
 
